@@ -1,0 +1,86 @@
+.footer-container
+{
+    display: flex;
+    justify-content: flex-end;
+    padding: 50px 4rem;
+    gap: 25px;
+    overflow: hidden;
+    height: 270px;
+    animation: apparition 1.5s;
+}
+
+.footer-container>div
+{
+    background-color: #8e6563e5;
+    height: 300px;
+    width: 22%;
+    padding: 3rem;
+    color: #fff;
+    border: solid 1px #fff;
+    border-radius: 30px 30px 0px 0px;
+    cursor: pointer;
+    transition: transform 330ms ease-in-out;
+}
+
+.footer-container>div:hover
+{
+    transform: translateY(-50px);
+}
+
+.footer-container>div>h2
+{   
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+.footer-container>div>p
+{   
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+
+.footer-container>div>span
+{   
+    display: block;
+    border-top: solid 1px #fff ;
+    width: 100%;
+    margin: 1rem 0;
+}
+
+@media screen and (max-width:1140px) {
+    .footer-container
+    {
+        justify-content: space-evenly;
+        padding: 50px 5px;
+        gap: 0px;
+        height: 270px;
+    }
+    .footer-container>div
+    {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        border-radius: 5px 5px 0px 0px;
+        width: 32%;
+        padding: 0rem;
+    }
+
+    .footer-container>div>h2
+    {   
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 1rem;
+        font-weight: 700;
+        padding: 1rem 1rem;
+    }
+    
+    .footer-container>div>p
+    {   
+        font-size: 1rem;
+        font-weight: 500;
+        padding: 0 3rem;
+    }
+    
+  }
